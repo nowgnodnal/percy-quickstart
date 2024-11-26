@@ -1,0 +1,4 @@
+serve: . 
+snapshots:
+  - name: Sample
+    url: /index.html

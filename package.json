@@ -1,0 +1,11 @@
+{
+  "name": "percy-quickstart",
+  "version": "1.0.0",
+  "scripts": {
+    "snapshot": "npx percy snapshot snapshots.yml"
+  },
+  "description": "",
+  "dependencies": {
+    "@percy/cli": "^1.30.2"
+  }
+}
