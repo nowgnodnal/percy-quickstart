@@ -8,32 +8,38 @@
   <img src="https://img.shields.io/badge/-Percy-black.svg?logo=percy&style=for-the-badge">
 </p>
 
-## 概要
+## Overview
 
-Percy というビジュアルテストのツールを用いて、２つの画像の差分を検出するためのプロジェクトです。
+This project aims to detect differences between two images using a visual testing tool Percy.
 
-## 開発環境構築
+## Development Environment
 
 <!-- コンテナの作成方法、パッケージのインストール方法など、開発環境構築に必要な情報を記載 -->
 
-### 技術スタック
+### Technical Stacks
 
-| 言語・パッケージ      | バージョン       | 
-| ------------------ | --------------- | 
-| Node               | 20.16.0         |
-| @percy/cli         | 1.30.2          |
+| Frameworks / Packages  | Version         | 
+| ---------------------- | --------------- | 
+| Node                   | 20.16.0         |
+| @percy/cli             | 1.30.2          |
 
 
-### 環境変数の一覧
+### Environmental Variables
 
-| 変数名                  | 役割                                   | 
-| ---------------------- | -------------------------------------- | 
-| PERCY_TOKEN            | Percy のプロジェクトごとに発行されるトークン |
-| PERCY_BRANCH           | Percy のブランチ名                       |
+| Variable Name          | Description                         | 
+| ---------------------- | ----------------------------------- | 
+| PERCY_TOKEN            | Percy Token of the target project   |
+| PERCY_BRANCH           | Percy Branch Name                   |
 
-## 動作確認
+## Verify that it works
 
-1. .env ファイルを作成して、環境変数を作成。
-2. `index.html` に `v1` の画像をセットし、`npx run snapshot` コマンドを実行。
-3. `index.html` に `v2` の画像をセットし、`npx run snapshot` コマンドを実行。
+1. create `.env` file and set environment variables.
+2. Set `v1` image in `index.html` and run `npx run snapshot` command.
+3. Set `v2` image in `index.html` and run `npx run snapshot` command.
 
+## Results
+### Input
+![alt text](assets/image1.png)
+
+### Output
+![alt text](assets/image2.png)
